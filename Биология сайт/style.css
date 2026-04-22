@@ -1,0 +1,149 @@
+/* Основные цвета сайта */
+body {
+    background-color: #f1f8e9; /* Очень светлый зеленый (лайм) */
+    color: #1b5e20; /* Темно-зеленый текст */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2e7d32; /* Темно-зеленый */
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #1b5e20;
+}
+
+/* Стили для логотипа в хедере */
+.header-container {
+    display: flex; /* Делает элементы в одну строку */
+    justify-content: center; /* Центрирует строку по горизонтали */
+    align-items: center; /* Центрирует элементы по вертикали (логотип и текст на одной линии) */
+}
+
+.logo-img {
+    max-height: 50px; /* Устанавливает размер логотипа по высоте названия */
+    margin-right: 15px; /* Отступ между логотипом и текстом */
+    border-radius: 5px; /* Немного скругляет углы */
+}
+
+nav {
+    background-color: #388e3c; /* Травяной зеленый */
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c8e6c9;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 85%;
+    margin: 25px auto;
+    padding: 30px;
+    border: 2px solid #a5d6a7;
+    border-radius: 15px;
+}
+
+h2 {
+    color: #2e7d32;
+    border-bottom: 2px solid #81c784;
+}
+
+/* Разные оттенки для блоков бактерий */
+.info-block {
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 8px solid;
+}
+
+.staph-bg { background-color: #e8f5e9; border-color: #4caf50; }
+.strep-bg { background-color: #f1f8e9; border-color: #8bc34a; }
+.diplo-bg { background-color: #f9fbe7; border-color: #cddc39; }
+.tetra-bg { background-color: #e0f2f1; border-color: #26a69a; }
+.sarcin-bg { background-color: #e8f5e9; border-color: #66bb6a; }
+
+/* Галерея */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+figure {
+    background: #ffffff;
+    border: 2px solid #c8e6c9;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+figcaption {
+    color: #2e7d32;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Модальные окна */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(27, 94, 32, 0.7); /* Зеленоватое затемнение */
+}
+
+.modal:target { display: block; }
+
+.modal-box {
+    background: white;
+    margin: 10% auto;
+    padding: 30px;
+    width: 350px;
+    border: 3px solid #2e7d32;
+    border-radius: 20px;
+    position: relative;
+}
+
+.close {
+    text-decoration: none;
+    color: #d32f2f;
+    font-weight: bold;
+    float: right;
+}
+
+/* Форма и кнопки */
+.input-field {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #81c784;
+}
+
+.submit-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #1b5e20;
+    color: #a5d6a7;
+    padding: 30px;
+    text-align: center;
+}
+
+footer a { color: #ffffff; text-decoration: none; }
